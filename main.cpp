@@ -1,6 +1,4 @@
-#include <iostream>
+#include "game_solver.hh"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-}
+
+int main() { return 0; }
