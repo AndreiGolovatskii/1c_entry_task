@@ -64,4 +64,3 @@ bool TGameState::operator==(const TGameState &other) const {
     }
     return true;
 }
-
