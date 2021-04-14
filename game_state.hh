@@ -5,6 +5,7 @@
 #include <set>
 #include <vector>
 #include <cassert>
+#include <algorithm>
 
 
 class TCard {
