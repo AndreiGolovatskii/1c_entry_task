@@ -4,7 +4,7 @@ add_subdirectory(third-party/googletest EXCLUDE_FROM_ALL)
 
 project(1c_entry)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
 
 add_library(solver game_state.hh game_solver.hh game_solver.cpp game_state.cpp)
 

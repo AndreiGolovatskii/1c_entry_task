@@ -51,7 +51,7 @@ ssize_t TGameSolver::Solve(const TGameState &startState) {
             if (newState.IsFinal()) {
                 return distance + 1;
             }
-            if (!DistanceToState_.contains(newState)) {
+            if (DistanceToState_.count(newState) == 0) {
                 PredictDistance_.erase(std::make_pair(DistanceToState_[newState] + newState.NumOfClosed(), newState));
                 DistanceToState_[newState] = distance + 1;
                 PredictDistance_.insert(std::make_pair(distance + 1 + newState.NumOfClosed(), newState));

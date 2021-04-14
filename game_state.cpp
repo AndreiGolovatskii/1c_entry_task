@@ -58,7 +58,7 @@ size_t TGameState::NumOfClosed() const {
 
 bool TGameState::operator==(const TGameState &other) const {
     for (size_t i = 0; i < StackCount; ++i) {
-        if (Stacks_[i] != other.Stacks_[i]) {
+        if (!(Stacks_[i] == other.Stacks_[i])) {
             return false;
         }
     }
