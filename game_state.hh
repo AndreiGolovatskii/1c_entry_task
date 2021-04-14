@@ -4,6 +4,7 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <cassert>
 
 
 class TCard {
